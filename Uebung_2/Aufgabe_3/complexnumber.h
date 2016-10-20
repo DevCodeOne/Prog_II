@@ -8,7 +8,14 @@ class complexnumber_constructor {
 	private:
 		double m_real;
 		double m_imaginary;
+		// eigentlich
+		// double m_real{0};
+		// double m_imag{0};
 };
+// auf jeden Fall in Class Initializer benutzen damit 
+// alle Primitiven initialisiert sind nur hier Ausnahme, um die Unterschiede
+// aufzuzeigen
+
 
 // in class initializer (equal)
 class complexnumber_in_class_equal {

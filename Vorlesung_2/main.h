@@ -7,8 +7,8 @@ class point {
 		double get_x() const { return m_x; }
 		double get_y() const { return m_y; }
 	private :
-		double m_x; 
-		double m_y;
+		double m_x = 0; 
+		double m_y = 0;
 };
 
 #endif

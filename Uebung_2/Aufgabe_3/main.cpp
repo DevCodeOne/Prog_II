@@ -8,7 +8,7 @@ using std::cout;
 using std::endl;
 
 int main() {
-	complexnumber_constructor nbr1;
+	complexnumber_constructor nbr1{};
 	complexnumber_in_class_equal nbr2;
 	complexnumber_in_class_braces nbr3;
 

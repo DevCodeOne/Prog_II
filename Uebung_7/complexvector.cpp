@@ -6,16 +6,12 @@
 SIMPLETEST("complexvector Konstruktor") {
 	complexnumber c = {};
 	complexnumber c2 = {10, 10};
-	complexvector cv(complexnumber {}, complexnumber{});
+	complexvector cv(c, c2);
 	
 	return c.is_nearly_equal(cv.begin()) && c2.is_nearly_equal(cv.end());
 };
 
-SIMPLETEST("") {
-	return true;
-};
-
-complexvector::complexvector(complexnumber begin, complexnumber end) 
+complexvector::complexvector(const complexnumber &begin, const complexnumber &end) 
 	: m_begin(begin), m_end(end) { }
 
 complexvector::~complexvector() { }
